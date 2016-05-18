@@ -38,6 +38,7 @@ else
     --volume=$BUNDLE_PATH:/bundle \
     --hostname="$HOSTNAME-$APPNAME" \
     --env-file=$ENV_FILE \
+    --link=mongodb:mongodb \
     --name=$APPNAME \
     meteorhacks/meteord:base
 fi
